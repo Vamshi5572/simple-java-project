@@ -26,7 +26,7 @@ public class WorksWithHerokuServletTest {
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
-        servlet = new WorksWithHeroServlet();
+        servlet = new WorksWithHerokuServlet();
     }
 
     @Test
