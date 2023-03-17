@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
-public class WorksWithHerokuServletTest {
+public class WorksWithHeroServletTest {
 
     private WorksWithHerokuServlet servlet;
 
@@ -36,6 +36,6 @@ public class WorksWithHerokuServletTest {
         when(response.getWriter()).thenReturn(writer);
 
         servlet.doGet(request, response);
-        assertEquals("Buddy Works with Heroku", new String( out.toByteArray(), "UTF-8"));
+        assertEquals("Buddy Works with Hero", new String( out.toByteArray(), "UTF-8"));
     }
 }
